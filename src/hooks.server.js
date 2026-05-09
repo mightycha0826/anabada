@@ -1,4 +1,3 @@
-import ws from 'ws';
 import { createServerClient } from '@supabase/ssr';
 import { PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY } from '$env/static/public';
 
@@ -14,8 +13,7 @@ export const handle = async ({ event, resolve }) => {
             event.cookies.set(name, value, { ...options, path: '/' })
           );
         }
-      },
-      realtime: { transport: ws }
+      }
     }
   );
 

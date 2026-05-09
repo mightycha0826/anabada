@@ -6,8 +6,11 @@ node_modules/
 build/
 dist/
 
-# Vercel build output
-.vercel/
+# Cloudflare build output
+.wrangler/
+
+# Local Cloudflare dev secrets
+.dev.vars
 
 # Environment variables — NEVER commit secrets
 .env

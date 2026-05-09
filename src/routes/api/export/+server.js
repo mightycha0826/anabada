@@ -71,7 +71,7 @@ export async function GET({ url, cookies }) {
     XLSX.utils.book_append_sheet(wb, buildSheet(all), '전체 물품');
   }
 
-  const buf = XLSX.write(wb, { type: 'buffer', bookType: 'xlsx' });
+  const buf = XLSX.write(wb, { type: 'array', bookType: 'xlsx' });
   const label = type === 'class' ? '반별' : type === 'domain' ? '영역별' : '전체';
   const date  = new Date().toISOString().slice(0, 10);
   const filename = encodeURIComponent(`아나바다_${label}_${date}.xlsx`);

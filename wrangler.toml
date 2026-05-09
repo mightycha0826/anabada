@@ -1,0 +1,10 @@
+name = "anabada"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# 환경 변수는 Cloudflare Pages 대시보드 또는 .dev.vars 파일에 설정하세요.
+# PUBLIC_SUPABASE_URL =
+# PUBLIC_SUPABASE_ANON_KEY =
+# SUPABASE_SERVICE_ROLE_KEY =
+# ADMIN_PASSWORD =
